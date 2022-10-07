@@ -1,1 +1,7 @@
 <p>detail works!</p>
+<button (click)="ajout()">ajouter</button>
+<form [formGroup]="fg">
+  <div *ngFor="let f of getArray().controls; let i = index;" formArrayName="liste">
+    <p><input [formControlName]="i"></p>
+  </div>
+</form>
