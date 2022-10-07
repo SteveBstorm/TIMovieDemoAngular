@@ -1,0 +1,8 @@
+<p>liste works!</p>
+<ul>
+  <li *ngFor="let m of movieList">
+    {{m.title}} <button (click)="godetail(m.id)">Details</button>
+  </li>
+</ul>
+
+<button (click)="login()">Login</button>
